@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <title>Create</title>
+</head>
+<body>
+  <section>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Customer Search</a>
+        <a href="./client.html">Clients</a>
+        <a href="./create.html">Create Customer</a>
+        <a href="./catalogue.html">Catelouge of Products</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+    <header>
+        <div onclick="openNav()">
+            <div class="div1 aim"> </div>
+              <div class="div1"> </div>
+            <div class="div1"> </div>
+        </div>
+
+        <p>Create</p>
+
+    </header>
+      </div>
+
+  </section>  
+
+<section>
+    <form class="row container-fluid">
+        <div class="col-md-8" style="flex-direction: column;">
+        <h2 class="mx-4 mb-5">Add a Customer</h2>
+        <div class="row mb-5">
+            <div class="col-md-2 px-5">
+<button class="btn btn-success">+</button>
+            </div>
+            <div class="col-md-10">
+            <input type="text" class="form-control" id="newName" placeholder="Name">
+        </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-2 px-5">
+<button class="btn btn-success">+</button>
+            </div>
+            <div class="col-md-10">
+            <textarea name="Address" id="Address" class="form-control" cols="30" rows="10" placeholder="Address1"></textarea>
+        </div>
+        </div>
+    
+        <div class="row mb-5">
+            <div class="col-md-2 px-5">
+
+            </div>
+            <div class="col-md-10">
+            <input type="text" class="form-control" id="Postcode" placeholder="PostCode">
+        </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-2 px-5">
+                <button class="btn btn-success">+</button>
+            </div>
+            <div class="col-md-10">
+            <input type="tel" class="form-control" id="Telephone" placeholder="Tel">
+        </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-2 px-5">
+                <button class="btn btn-success">+</button>
+            </div>
+            <div class="col-md-10">
+            <input type="email" class="form-control" id="Email" placeholder="Email">
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-md-4 pt-5">
+            <div class="row" style="padding-top: 36px; margin-bottom: 12px;">
+                <div class="col-md-2">
+<button class="btn btn-success">+</button>
+                </div>
+                <div class="col-md-2">
+<h4>Mon</h4>
+                </div>
+                <div class="col-md-8">
+<input type="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 36px; margin-bottom: 16px;">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-2">
+<h4>Tue</h4>
+                </div>
+                <div class="col-md-8">
+<input type="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 36px; margin-bottom: 6px;">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-2">
+<h4>Wed</h4>
+                </div>
+                <div class="col-md-8">
+<input type="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 36px; margin-bottom: 5px;">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-2">
+<h4>Thur</h4>
+                </div>
+                <div class="col-md-8">
+<input type="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 36px; margin-bottom: 5px;">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-2">
+<h4>Fri</h4>
+                </div>
+                <div class="col-md-8">
+<input type="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 36px; margin-bottom: 0px;">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-2">
+<h4>Sat</h4>
+                </div>
+                <div class="col-md-8">
+<input type="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 36px; margin-bottom: 0px;">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-2">
+<h4>Sun</h4>
+                </div>
+                <div class="col-md-8">
+<input type="time" class="form-control">
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 36px; margin-bottom: 0px;">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+<button class="btn btn-success form-control" onclick="alert('I have not worked on this part yet.')">Create</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+
+
+    <script src="./script.js"></script>
+<script src="./bootstrap-5.0.2/bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="./bootstrap-5.0.2/bootstrap-5.0.2/dist/js/popper.js"></script>
+</body>
+</html>

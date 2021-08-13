@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+        section{
+            padding: 30px;
+        }
+        input{
+            margin-bottom: 15px;
+            width: 250px;
+        }
+#inner{
+    display: flex;
+}
+        #outer{
+            list-style: none;
+           visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    
+<section>
+
+    <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<button >Answer</button> -->
+
+    <!-- <div>
+        <p>names</p>
+        <section>
+        <ul id="outer">
+          <li id="inner"> <div></div> <div><p>billy</p></div>  <button>+</button>  </li>
+          <li id="inner"> <div></div> <p>dave</p>   <button>+</button> </li>
+          <li id="inner"> <div></div> <p>agena</p>  <button>+</button>  </li>
+          <li id="inner">  <p>zenca</p>   <button>+</button> </li>
+          <li id="inner">  <p>arine</p>  <button>+</button>  </li>
+          <li id="inner">  <p>ritare</p> <button>+</button>  </li>
+          <li id="inner">  <p>narine</p>  <button>+</button> </li>
+          <li id="inner">  <p>ritanay</p>  <button>+</button> </li>
+        </ul>
+    </section>
+    </div>
+</section> -->
+
+<section>
+<input type="text" id="name" placeholder="name">
+
+<input type="tel" id="tel" placeholder="tel">
+
+<input type="date" id="date" placeholder="date">
+
+<select name="day" id="day" aria-placeholder="day">
+    <option value="">Select a day</option>
+<option value="">Mon</option>
+<option value="">Wed</option>
+<option value="">Fri</option>
+</select>
+<button type="submit" onclick="submit()">Submit</button>
+</section>
+
+
+<section>
+    <p>Name: <span id="nameSpace"></span></p>
+    <p>Tel <span id="telSpace"></span></p>
+    <p>Date: <span id="dateSpace"></span></p>
+    <p>Day: <span id="daySpace"></span></p>
+</section>
+
+
+
+
+<script>
+const name;
+const tel;
+const date;
+const day;
+const nSpace;
+const tSpace;
+const dateSpace;
+const daySpace;
+function submit() {
+    
+  
+   
+
+    document.addEventListener("click", function(){
+        name = document.querySelector('#name') 
+        alert(name);
+});
+    tel = document.getElementById('tel').value;
+    date = document.getElementById('date').value;
+    day = document.getElementById('day').value;
+    nSpace = document.querySelector('#nameSpace');
+    // nSpace = document.getElementById('nameSpace');
+    tSpace = document.getElementById('telSpace');
+    dateSpace = document.getElementById('dateSpace');
+    daySpace = document.getElementById('daySpace')
+
+    // var x = localStorage.getItem("name");
+    // var y = localStorage.getItem("tel");
+    // var z = localStorage.getItem("date");
+    // var a = localStorage.getItem("day");
+
+// nSpace.innerHTML = name;
+
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+  
+    //     function myFunction() {
+    //         input = document.getElementById("myInput");
+            
+    //     var input, filter, divOutside, divInner, p, i, txtValue;
+    //     filter = input.value.toUpperCase();
+    //     divOutside = document.getElementById("outer");
+    //     divInner = divOutside.getElementsByTagName("li");
+    //     for (i = 0; i < divInner.length; i++) {
+    //         p = divInner[i].getElementsByTagName("p")[0];
+    //         txtValue = p.textContent || p.innerText;
+    //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    //             divInner[i].style.display = "";
+    //         } else {
+    //             divInner[i].style.display = "none";
+    //         }
+    //     }
+
+    //     if(input.value < 1){
+    //         divOutside.style.visibility = 'hidden'
+    //     }else{
+    //         divOutside.style.visibility = 'visible'
+    //     }
+    // }
+
+  
+    </script>
+</body>
+</html>
